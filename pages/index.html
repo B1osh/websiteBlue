@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>My Website</title>
+    <script src="../scripts/chess.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        state = new GameState();
+        chessContainer = document.getElementById('chessboard-container');
+        state.showChessboard(chessContainer);
+    });
+    </script>
+</head>
+<body>
+    <div width="100%">
+    <div class="container"> 
+        <div id="chessboard-container"></div>
+    </div>
+    </div>
+    <input type="text" placeholder="Your move.." onkeydown="state.handleMoveInput(this, event, chessContainer)">
+</body>
+</html>

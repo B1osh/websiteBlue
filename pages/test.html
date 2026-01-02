@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Lobby</title>
+    <link rel="stylesheet" href="../styles/test.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Active Code -->
+        <div class="active-code">
+            <span class="label">Active Code</span>
+            <span id="activeCode" class="code">-</span>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button id="createBtn">Create Game</button>
+
+            <div class="join-group">
+                <input type="text" id="joinInput" placeholder="Enter code">
+                <button id="joinBtn">Join Game</button>
+            </div>
+
+            <div id="statusCircle" class="circle status red"></div>
+        </div>
+
+        <!-- Divider -->
+        <div class="divider"></div>
+
+        <!-- Color Controls -->
+        <div class="color-controls">
+            <button class="btn blue">Blue</button>
+            <button class="btn red">Red</button>
+
+            <div id="colorCircle" class="circle gray"></div>
+        </div>
+
+    </div>
+
+    <script src="../scripts/test.js"></script>
+</body>
+</html>
