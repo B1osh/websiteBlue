@@ -1,3 +1,6 @@
+/* =========================
+   GLOBAL / SHARED STYLES
+   ========================= */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,18 +14,66 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
+/* Generic container for both pages */
 .container {
     background: #020617;
     padding: 24px 28px;
     border-radius: 16px;
     width: 360px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    text-align: center;
 }
 
-/* Active Code */
+/* Buttons */
+button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: #2563eb;
+    color: white;
+    font-weight: 500;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* =========================
+   SPLASH / HOME PAGE STYLES
+   ========================= */
+.hero h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.hero p {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    margin-bottom: 32px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* =========================
+   LOBBY / GAME PAGE STYLES
+   ========================= */
+
+/* Active Code Section */
 .active-code {
     text-align: center;
     margin-bottom: 24px;
@@ -65,25 +116,6 @@ input {
     border: 1px solid #1e293b;
 }
 
-button {
-    padding: 8px 12px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    background: #2563eb;
-    color: white;
-    font-weight: 500;
-    transition: background 0.2s ease, transform 0.1s ease;
-}
-
-button:hover {
-    background: #1d4ed8;
-}
-
-button:active {
-    transform: scale(0.97);
-}
-
 /* Divider */
 .divider {
     height: 1px;
@@ -91,14 +123,14 @@ button:active {
     margin: 20px 0;
 }
 
-/* Color Section */
+/* Color Controls */
 .color-controls {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-/* Buttons */
+/* Special buttons for lobby colors */
 .btn.blue {
     background: #3b82f6;
 }
@@ -112,6 +144,7 @@ button:active {
     width: 18px;
     height: 18px;
     border-radius: 50%;
+    display: inline-block;
 }
 
 .circle.red {
@@ -130,7 +163,6 @@ button:active {
     background: #3b82f6;
 }
 
-/* Status circle spacing */
 .status {
     align-self: flex-end;
 }
